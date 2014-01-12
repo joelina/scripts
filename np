@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+try:
+    import mpd
+    client = mpd.MPDClient(use_unicode=True)
+    client.connect("localhost", 6600)
+    status,current = client.status(),client.currentsong()
+    print("12is now playing 10{} 03\"{}\" 12({}) - 07{} 14at 04{} kbps".format(current['artist'],current['album'],current['date'],current['title'],status['bitrate']))
+except:
+    pass
