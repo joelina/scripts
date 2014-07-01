@@ -7,3 +7,10 @@ A now playing script for mpd, designed to be used with an IRC client that allows
 #####Requirements
   * Python 3
   * "python-mpd2" https://github.com/Mic92/python-mpd2
+
+####newall
+Selects a random wallpaper from ~/wallpaper/
+#####Requirements
+ * feh
+ * shuf (You might already have this)
+ * find (Every distro ever should have this...)
