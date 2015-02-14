@@ -12,5 +12,14 @@ A now playing script for mpd, designed to be used with an IRC client that allows
 Selects a random wallpaper from ~/wallpaper/
 #####Requirements
  * feh
- * shuf (You might already have this)
- * find (Every distro ever should have this...)
+ * shuf
+ * find
+
+###wallquote
+ Selects a random wallpaper from ~/wallpaper/ and layers a quote from the command fortune and then sets that as the wallpaper.
+#####Requirements
+ * feh
+ * shuf
+ * find
+ * xargs
+ * imagemagick (convert)

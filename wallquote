@@ -1,0 +1,7 @@
+#!/bin/sh
+fortune -se linux | sed 's/\t/    /g' | xargs -0 -I quote \
+    convert "$(find ~/wallpaper/ | shuf -n1)" \
+    -gravity southeast -pointsize 55 -font Dancing-Script -stroke black -strokewidth 8 -annotate 0 "quote"  \
+    -gravity southeast -pointsize 55 -font Dancing-Script -stroke none -fill white -annotate 0 "quote" \
+    -quality 100% /tmp/wall.jpg
+feh --bg-fill /tmp/wall.jpg
